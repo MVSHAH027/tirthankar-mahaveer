@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="gu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="pageTitle">ભગવાન મહાવીર: કેવળજ્ઞાન અને શાસન સ્થાપના</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Gujarati:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', 'Noto Sans Gujarati', sans-serif;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .lang-gu {
+            font-family: 'Noto Sans Gujarati', sans-serif;
+        }
+        .lang-en {
+            font-family: 'Inter', sans-serif;
+        }
+        .content-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .content-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        .btn-lang {
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        .btn-lang:hover {
+            transform: scale(1.05);
+        }
+        .btn-lang.active {
+            background-color: #1D4ED8; /* Darker blue for active */
+            color: white;
+        }
+        .video-link a {
+            transition: color 0.3s ease;
+        }
+        .video-link a:hover {
+            color: #2563EB; /* Tailwind blue-600 */
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-orange-100 via-yellow-50 to-amber-100 text-gray-800 min-h-screen flex flex-col items-center justify-center p-4 sm:p-6">
+
+    <div class="container mx-auto max-w-4xl bg-white/80 backdrop-blur-md shadow-2xl rounded-xl p-6 sm:p-10">
+
+        <header class="mb-8 text-center">
+            <div class="flex justify-end space-x-2 mb-6">
+                <button id="btnGujarati" class="btn-lang lang-gu bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg shadow-md active">ગુજરાતી</button>
+                <button id="btnEnglish" class="btn-lang lang-en bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded-lg shadow-md">English</button>
+            </div>
+            <h1 id="mainHeading" class="text-3xl sm:text-4xl font-bold text-orange-600 mb-3">ભગવાન મહાવીર: કેવળજ્ઞાન અને શાસન સ્થાપના</h1>
+            <p id="subHeading" class="text-lg text-gray-600">જિનવાણી: યુવા વિશેષાંકમાંથી પ્રેરણા</p>
+        </header>
+
+        <main>
+            <section id="pdfLinksSection" class="space-y-6 mb-10">
+                <h2 id="pdfSectionTitle" class="text-2xl font-semibold text-gray-700 mb-4 border-b-2 border-orange-400 pb-2">મહત્વપૂર્ણ દસ્તાવેજો</h2>
+
+                <div class="content-card bg-amber-50 p-6 rounded-lg shadow-lg border border-amber-200">
+                    <h3 id="pdf1Title" class="text-xl font-semibold text-orange-700 mb-2">ભગવાન મહાવીર: કેવળજ્ઞાન અને શાસન સ્થાપના (ગુજરાતી PDF)</h3>
+                    <p id="pdf1Desc" class="text-gray-600 mb-3">આ દસ્તાવેજમાં ભગવાન મહાવીરના કેવળજ્ઞાન પ્રાપ્તિ અને જૈન શાસનની સ્થાપનાની વિસ્તૃત માહિતી આપવામાં આવી છે. યુવાનો માટે ખાસ તૈયાર કરાયેલ આ વિશેષાંકમાં તેમના જીવનના મહત્વપૂર્ણ પ્રસંગો અને અમૂલ્ય બોધનો સમાવેશ થાય છે.</p>
+                    <a id="pdf1Link" href="ભગવાન મહાવીર- કેવળજ્ઞાન અને શાસન સ્થાપના.pdf" target="_blank" class="inline-block bg-orange-500 hover:bg-orange-600 text-white font-medium py-2 px-5 rounded-md shadow hover:shadow-lg transition duration-300">
+                        <span id="pdf1LinkText">PDF જુઓ</span> ➔
+                    </a>
+                </div>
+
+                <div class="content-card bg-sky-50 p-6 rounded-lg shadow-lg border border-sky-200">
+                    <h3 id="pdf2Title" class="text-xl font-semibold text-sky-700 mb-2">તીર્થંકર મહાવીર: કેવળજ્ઞાન પ્રાપ્તિ અને જૈન શાસનની સ્થાપના (અંગ્રેજી PDF)</h3>
+                    <p id="pdf2Desc" class="text-gray-600 mb-3">આ અંગ્રેજી દસ્તાવેજ ભગવાન મહાવીરના કેવળજ્ઞાન અને જૈન શાસનની સ્થાપના પર પ્રકાશ પાડે છે. તેમાં તેમના જીવન, તપસ્યા અને મુખ્ય ઉપદેશોનું વર્ણન છે.</p>
+                    <a id="pdf2Link" href="Tirthankara Mahavir- Attainment of Omniscience and Establishment of the Jain Order (Shasan).pdf" target="_blank" class="inline-block bg-sky-500 hover:bg-sky-600 text-white font-medium py-2 px-5 rounded-md shadow hover:shadow-lg transition duration-300">
+                        <span id="pdf2LinkText">View PDF</span> ➔
+                    </a>
+                </div>
+
+                <div class="content-card bg-lime-50 p-6 rounded-lg shadow-lg border border-lime-200">
+                    <h3 id="pdf3Title" class="text-xl font-semibold text-lime-700 mb-2">ભગવાન મહાવીર: કેવલજ્ઞાન પ્રાપ્તિ ઔર જૈન શાસન સ્થાપના (હિન્દી PDF)</h3>
+                    <p id="pdf3Desc" class="text-gray-600 mb-3">આ હિન્દી દસ્તાવેજ ભગવાન મહાવીરના કેવળજ્ઞાન પ્રાપ્તિ અને જૈન શાસનની સ્થાપનાની ચર્ચા કરે છે, જે તેમના જીવન અને ઉપદેશોની સમજ આપે છે.</p>
+                    <a id="pdf3Link" href="भगवान महावीर- केवलज्ञान प्राप्ति और जैन शासन स्थापना.pdf" target="_blank" class="inline-block bg-lime-500 hover:bg-lime-600 text-white font-medium py-2 px-5 rounded-md shadow hover:shadow-lg transition duration-300">
+                        <span id="pdf3LinkText">PDF देखें</span> ➔
+                    </a>
+                </div>
+            </section>
+
+            <section id="videoSection" class="mb-10 text-center bg-white p-6 rounded-lg shadow-lg border border-gray-200">
+                <h2 id="videoSectionTitle" class="text-2xl font-semibold text-gray-700 mb-4">વધુ જાણો</h2>
+                <p id="videoIntroText" class="text-gray-600 mb-3 video-link">📹 આ વિષય પર વધુ જાણવા અને ભગવાન મહાવીરની ગાથા સમજવા આ વિડિઓ જુઓ:</p>
+                <a id="videoMainLink" href="https://youtu.be/KYHW67Mxaa0" target="_blank" class="text-blue-600 hover:text-blue-800 font-semibold text-lg underline">
+                    <span id="videoLinkTitle">[ભગવાન મહાવીર: કેવળજ્ઞાન અને જૈન શાસન સ્થાપના]</span>
+                </a>
+            </section>
+        </main>
+
+        <footer class="text-center mt-10 pt-6 border-t border-gray-300">
+            <p id="footerText" class="text-gray-500 text-sm">&copy; <span id="currentYear"></span>. સર્વ હક સ્વાધીન.</p>
+            <p class="text-gray-500 text-sm mt-2">
+                <span id="joinGroupText">"ABCD of Jainism" ગ્રુપમાં જોડાવા માટે:</span>
+                <a href="https://chat.whatsapp.com/KBQhWCKtSLv9ZxBoQJ7Ynd" target="_blank" class="text-green-600 hover:underline">અહીં ક્લિક કરો</a>
+            </p>
+        </footer>
+    </div>
+
+    <script>
+        // Language content data
+        const translations = {
+            gu: {
+                pageTitle: "ભગવાન મહાવીર: કેવળજ્ઞાન અને શાસન સ્થાપના",
+                mainHeading: "ભગવાન મહાવીર: કેવળજ્ઞાન અને શાસન સ્થાપના",
+                subHeading: "જિનવાણી: યુવા વિશેષાંકમાંથી પ્રેરણા",
+                pdfSectionTitle: "મહત્વપૂર્ણ દસ્તાવેજો",
+                pdf1Title: "ભગવાન મહાવીર: કેવળજ્ઞાન અને શાસન સ્થાપના (ગુજરાતી PDF)",
+                pdf1Desc: "આ દસ્તાવેજમાં ભગવાન મહાવીરના કેવળજ્ઞાન પ્રાપ્તિ અને જૈન શાસનની સ્થાપનાની વિસ્તૃત માહિતી આપવામાં આવી છે. યુવાનો માટે ખાસ તૈયાર કરાયેલ આ વિશેષાંકમાં તેમના જીવનના મહત્વપૂર્ણ પ્રસંગો અને અમૂલ્ય બોધનો સમાવેશ થાય છે.",
+                pdf1LinkText: "PDF જુઓ",
+                pdf2Title: "તીર્થંકર મહાવીર: કેવળજ્ઞાન પ્રાપ્તિ અને જૈન શાસનની સ્થાપના (અંગ્રેજી PDF)",
+                pdf2Desc: "આ અંગ્રેજી દસ્તાવેજ ભગવાન મહાવીરના કેવળજ્ઞાન અને જૈન શાસનની સ્થાપના પર પ્રકાશ પાડે છે. તેમાં તેમના જીવન, તપસ્યા અને મુખ્ય ઉપદેશોનું વર્ણન છે.",
+                pdf2LinkText: "PDF જુઓ", // Kept Gujarati for consistency in button text, or change if needed
+                pdf3Title: "ભગવાન મહાવીર: કેવલજ્ઞાન પ્રાપ્તિ ઔર જૈન શાસન સ્થાપના (હિન્દી PDF)",
+                pdf3Desc: "આ હિન્દી દસ્તાવેજ ભગવાન મહાવીરના કેવળજ્ઞાન પ્રાપ્તિ અને જૈન શાસનની સ્થાપનાની ચર્ચા કરે છે, જે તેમના જીવન અને ઉપદેશોની સમજ આપે છે.",
+                pdf3LinkText: "PDF જુઓ", // Kept Gujarati for consistency
+                videoSectionTitle: "વધુ જાણો",
+                videoIntroText: "📹 આ વિષય પર વધુ જાણવા અને ભગવાન મહાવીરની ગાથા સમજવા આ વિડિઓ જુઓ:",
+                videoLinkTitle: "[ભગવાન મહાવીર: કેવળજ્ઞાન અને જૈન શાસન સ્થાપના]",
+                footerText: `© ${new Date().getFullYear()}. સર્વ હક સ્વાધીન.`,
+                joinGroupText: "\"ABCD of Jainism\" ગ્રુપમાં જોડાવા માટે:",
+                btnGujarati: "ગુજરાતી",
+                btnEnglish: "English"
+            },
+            en: {
+                pageTitle: "Lord Mahavir: Attainment of Omniscience and Establishment of the Jain Order",
+                mainHeading: "Lord Mahavir: Attainment of Omniscience & Establishment of the Jain Order",
+                subHeading: "Inspiration from Jinvaani: Youth Special Edition",
+                pdfSectionTitle: "Important Documents",
+                pdf1Title: "Bhagwan Mahavir: Kevalgyan and Shasan Sthapana (Gujarati PDF)",
+                pdf1Desc: "This document provides detailed information about Lord Mahavir's attainment of Kevalgyan (omniscience) and the establishment of the Jain Shasan (order). Specially prepared for youth, this special issue includes important events from his life and his invaluable teachings.",
+                pdf1LinkText: "View PDF",
+                pdf2Title: "Tirthankara Mahavir: Attainment of Omniscience and Establishment of the Jain Order (Shasan) (English PDF)",
+                pdf2Desc: "This English document sheds light on Lord Mahavir's attainment of omniscience and the establishment of the Jain order. It describes his life, penance, and key teachings.",
+                pdf2LinkText: "View PDF",
+                pdf3Title: "Bhagwan Mahavir: Kevalgyan Prapti aur Jain Shasan Sthapana (Hindi PDF)",
+                pdf3Desc: "This Hindi document discusses Lord Mahavir's attainment of omniscience and the establishment of the Jain order, providing insights into his life and teachings.",
+                pdf3LinkText: "View PDF",
+                videoSectionTitle: "Learn More",
+                videoIntroText: "📹 To learn more about this topic and understand the story of Lord Mahavir, watch this video:",
+                videoLinkTitle: "[Lord Mahavir: Attainment of Omniscience and Establishment of the Jain Order]",
+                footerText: `© ${new Date().getFullYear()}. All rights reserved.`,
+                joinGroupText: "To Join \"ABCD of Jainism\" Group:",
+                btnGujarati: "ગુજરાતી",
+                btnEnglish: "English"
+            }
+        };
+
+        // DOM Elements
+        const pageTitle = document.getElementById('pageTitle');
+        const mainHeading = document.getElementById('mainHeading');
+        const subHeading = document.getElementById('subHeading');
+        const pdfSectionTitle = document.getElementById('pdfSectionTitle');
+
+        const pdf1Title = document.getElementById('pdf1Title');
+        const pdf1Desc = document.getElementById('pdf1Desc');
+        const pdf1LinkText = document.getElementById('pdf1LinkText');
+
+        const pdf2Title = document.getElementById('pdf2Title');
+        const pdf2Desc = document.getElementById('pdf2Desc');
+        const pdf2LinkText = document.getElementById('pdf2LinkText');
+
+        const pdf3Title = document.getElementById('pdf3Title');
+        const pdf3Desc = document.getElementById('pdf3Desc');
+        const pdf3LinkText = document.getElementById('pdf3LinkText');
+        
+        const videoSectionTitle = document.getElementById('videoSectionTitle');
+        const videoIntroText = document.getElementById('videoIntroText');
+        const videoLinkTitle = document.getElementById('videoLinkTitle');
+        
+        const footerText = document.getElementById('footerText');
+        const joinGroupText = document.getElementById('joinGroupText');
+        const currentYearSpan = document.getElementById('currentYear');
+
+        const btnGujarati = document.getElementById('btnGujarati');
+        const btnEnglish = document.getElementById('btnEnglish');
+        const bodyElement = document.body;
+
+        // Function to change language
+        function setLanguage(lang) {
+            if (!translations[lang]) {
+                console.error("Language not found:", lang);
+                return;
+            }
+            const t = translations[lang];
+
+            // Update text content
+            pageTitle.textContent = t.pageTitle;
+            mainHeading.textContent = t.mainHeading;
+            subHeading.textContent = t.subHeading;
+            pdfSectionTitle.textContent = t.pdfSectionTitle;
+
+            pdf1Title.textContent = t.pdf1Title;
+            pdf1Desc.textContent = t.pdf1Desc;
+            pdf1LinkText.textContent = t.pdf1LinkText;
+
+            pdf2Title.textContent = t.pdf2Title;
+            pdf2Desc.textContent = t.pdf2Desc;
+            pdf2LinkText.textContent = t.pdf2LinkText;
+
+            pdf3Title.textContent = t.pdf3Title;
+            pdf3Desc.textContent = t.pdf3Desc;
+            pdf3LinkText.textContent = t.pdf3LinkText;
+
+            videoSectionTitle.textContent = t.videoSectionTitle;
+            videoIntroText.innerHTML = t.videoIntroText; // Use innerHTML for the emoji
+            videoLinkTitle.textContent = t.videoLinkTitle;
+            
+            footerText.innerHTML = t.footerText; // Use innerHTML for the copyright year
+            joinGroupText.textContent = t.joinGroupText;
+            
+            // Update button text (optional, if you want button text to change too)
+            // btnGujarati.textContent = t.btnGujarati;
+            // btnEnglish.textContent = t.btnEnglish;
+
+            // Update body class for font
+            if (lang === 'gu') {
+                bodyElement.classList.remove('lang-en');
+                bodyElement.classList.add('lang-gu');
+                document.documentElement.lang = 'gu';
+                btnGujarati.classList.add('active');
+                btnEnglish.classList.remove('active');
+            } else {
+                bodyElement.classList.remove('lang-gu');
+                bodyElement.classList.add('lang-en');
+                document.documentElement.lang = 'en';
+                btnEnglish.classList.add('active');
+                btnGujarati.classList.remove('active');
+            }
+        }
+
+        // Event Listeners for language buttons
+        btnGujarati.addEventListener('click', () => setLanguage('gu'));
+        btnEnglish.addEventListener('click', () => setLanguage('en'));
+
+        // Set initial language and year
+        document.addEventListener('DOMContentLoaded', () => {
+            currentYearSpan.textContent = new Date().getFullYear();
+            // Set initial language to Gujarati
+            setLanguage('gu'); 
+        });
+
+    </script>
+
+</body>
+</html>
